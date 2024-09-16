@@ -17,6 +17,7 @@
 		957A2F182C98E6D600D84F9A /* ReceipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F172C98E6D600D84F9A /* ReceipeView.swift */; };
 		957A2F1A2C98E75A00D84F9A /* ReceipeNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F192C98E75A00D84F9A /* ReceipeNetworkManager.swift */; };
 		957A2F1C2C98E7D300D84F9A /* ReceipeMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F1B2C98E7D300D84F9A /* ReceipeMeals.swift */; };
+		957A2F1E2C98EBFB00D84F9A /* ReceipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F1D2C98EBFB00D84F9A /* ReceipeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		957A2F172C98E6D600D84F9A /* ReceipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeView.swift; sourceTree = "<group>"; };
 		957A2F192C98E75A00D84F9A /* ReceipeNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeNetworkManager.swift; sourceTree = "<group>"; };
 		957A2F1B2C98E7D300D84F9A /* ReceipeMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeMeals.swift; sourceTree = "<group>"; };
+		957A2F1D2C98EBFB00D84F9A /* ReceipeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				957A2F152C98E6AB00D84F9A /* CatalogViewModel.swift */,
+				957A2F1D2C98EBFB00D84F9A /* ReceipeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				957A2F182C98E6D600D84F9A /* ReceipeView.swift in Sources */,
 				957A2F1A2C98E75A00D84F9A /* ReceipeNetworkManager.swift in Sources */,
 				957A2F112C98DBC000D84F9A /* CatalogNetworkManager.swift in Sources */,
+				957A2F1E2C98EBFB00D84F9A /* ReceipeViewModel.swift in Sources */,
 				957A2F022C98D9D700D84F9A /* CatalogView.swift in Sources */,
 				957A2F1C2C98E7D300D84F9A /* ReceipeMeals.swift in Sources */,
 				957A2F132C98E1FF00D84F9A /* CatalogMeals.swift in Sources */,
