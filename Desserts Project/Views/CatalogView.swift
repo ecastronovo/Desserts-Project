@@ -1,18 +1,24 @@
 import SwiftUI
 
-class CatalogViewModel: ObservableObject {
-    @Published var CatalogViewProperties: CatalogView.Properties?
-    @Published public var isLoading: Bool 
+protocol CatalogViewModelInterface: ObservableObject {
+    func getMeals()
+}
+
+class CatalogViewModel: CatalogViewModelInterface {
+    @Published var catalogViewProperties: CatalogView.Properties?
+    @Published public var isLoading: Bool
     private let networkManager: CatalogNetworkManagerInterface
 
-    public init(CatalogViewProperties: CatalogView.Properties? = nil, 
+    public init(catalogViewProperties: CatalogView.Properties? = nil,
                 isLoading: Bool = false,
                 networkManager: CatalogNetworkManagerInterface = CatalogNetworkManager()) {
-        self.CatalogViewProperties = CatalogViewProperties
+        self.catalogViewProperties = catalogViewProperties
         self.isLoading = isLoading
         self.networkManager = networkManager
     }
 
+    func getMeals() {
+    }
 }
 
 struct CatalogView: View {
@@ -27,13 +33,16 @@ struct CatalogView: View {
                 
             }
         }
+        .onAppear() {
+            catalogViewModel.getMeals()
+        }
     }
 
-    struct Properties {
-        let meals: [Meal]
+    struct Properties: Equatable {
+        let catalogMeals: [Meal]
     }
 
-    struct Meal {
+    struct Meal: Equatable {
         let mealName: String
         let mealImageString: String
         let mealId: String
