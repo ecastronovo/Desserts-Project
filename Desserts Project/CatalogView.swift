@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ContentView: View {
+struct CatalogView: View {
     var body: some View {
         Text("")
     }
