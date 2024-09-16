@@ -23,10 +23,16 @@ struct ReceipeView: View {
 
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    struct Properties: Equatable {
+        let mealName: String
+        let ingredients: [Ingredient]
     }
 
-    struct Properties {
+    struct Ingredient: Equatable, Identifiable {
+        let id = UUID()
         
+        let measurements: String
+        let ingredientName: String
     }
 }
 
