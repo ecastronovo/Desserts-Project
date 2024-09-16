@@ -14,6 +14,7 @@
 		957A2F112C98DBC000D84F9A /* CatalogNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F102C98DBC000D84F9A /* CatalogNetworkManager.swift */; };
 		957A2F132C98E1FF00D84F9A /* CatalogMeals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F122C98E1FF00D84F9A /* CatalogMeals.swift */; };
 		957A2F162C98E6AB00D84F9A /* CatalogViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F152C98E6AB00D84F9A /* CatalogViewModel.swift */; };
+		957A2F182C98E6D600D84F9A /* ReceipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F172C98E6D600D84F9A /* ReceipeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		957A2F102C98DBC000D84F9A /* CatalogNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogNetworkManager.swift; sourceTree = "<group>"; };
 		957A2F122C98E1FF00D84F9A /* CatalogMeals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogMeals.swift; sourceTree = "<group>"; };
 		957A2F152C98E6AB00D84F9A /* CatalogViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogViewModel.swift; sourceTree = "<group>"; };
+		957A2F172C98E6D600D84F9A /* ReceipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceipeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				957A2F012C98D9D700D84F9A /* CatalogView.swift */,
+				957A2F172C98E6D600D84F9A /* ReceipeView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				957A2F182C98E6D600D84F9A /* ReceipeView.swift in Sources */,
 				957A2F112C98DBC000D84F9A /* CatalogNetworkManager.swift in Sources */,
 				957A2F022C98D9D700D84F9A /* CatalogView.swift in Sources */,
 				957A2F132C98E1FF00D84F9A /* CatalogMeals.swift in Sources */,
