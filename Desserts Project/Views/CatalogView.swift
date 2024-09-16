@@ -16,7 +16,7 @@ struct CatalogView: View {
                             spacing: 8
                         ) {
                             ForEach(meals, id: \.mealId) { meal in
-                                NavigationLink(destination: Text("Next View")) {
+                                NavigationLink(destination: ReceipeView(mealId: meal.mealId)) {
                                     VStack {
                                         Text("\(meal.mealName)")
                                         AsyncImage(url: URL(string: meal.mealImageString)) { image in
