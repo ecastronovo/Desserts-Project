@@ -1,6 +1,10 @@
 import SwiftUI
 
-class ReceipeViewModel: ObservableObject {
+protocol ReceipeViewModelInterface: ObservableObject {
+    
+}
+
+class ReceipeViewModel: ReceipeViewModelInterface {
     @Published var receipeProperties: ReceipeView.Properties?
     @Published public var isLoading: Bool = false
     private let networkManager: ReceipeNetworkManagerInterface
