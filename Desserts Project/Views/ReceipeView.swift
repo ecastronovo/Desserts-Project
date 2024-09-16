@@ -22,7 +22,39 @@ struct ReceipeView: View {
     let mealId: String
 
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if receipeViewModel.isLoading {
+                ProgressView()
+            }
+            else {
+                if let viewProperties = receipeViewModel.receipeProperties {
+                    VStack {
+                        Text(viewProperties.mealName)
+                            .padding(20)
+                            .font(.title)
+                        
+                        Text("Receipe:")
+                            .padding(20)
+                        ScrollView {
+                            ForEach(viewProperties.ingredients) { ingredient in
+                                HStack {
+                                    Text(ingredient.ingredientName)
+                                    Text(ingredient.measurements)
+                                }
+                            }
+                        }
+                    }
+                }
+                else {
+                    Text("Not a valid item ID")
+                }
+                
+                
+            }
+        }.onAppear {
+        }
+    }
+
     struct Properties: Equatable {
         let mealName: String
         let ingredients: [Ingredient]
