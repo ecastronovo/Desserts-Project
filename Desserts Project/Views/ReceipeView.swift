@@ -109,6 +109,9 @@ struct ReceipeView: View {
                 
             }
         }.onAppear {
+            Task {
+                await receipeViewModel.fetchReceipe(id: mealId)
+            }
         }
     }
 
