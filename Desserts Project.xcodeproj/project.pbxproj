@@ -52,7 +52,8 @@
 			isa = PBXGroup;
 			children = (
 				957A2EFF2C98D9D700D84F9A /* Desserts_ProjectApp.swift */,
-				957A2F012C98D9D700D84F9A /* CatalogView.swift */,
+				957A2F0E2C98DA9E00D84F9A /* Views */,
+				957A2F0D2C98DA9800D84F9A /* Models */,
 				957A2F032C98D9D900D84F9A /* Assets.xcassets */,
 				957A2F052C98D9D900D84F9A /* Preview Content */,
 			);
@@ -65,6 +66,21 @@
 				957A2F062C98D9D900D84F9A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		957A2F0D2C98DA9800D84F9A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		957A2F0E2C98DA9E00D84F9A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				957A2F012C98D9D700D84F9A /* CatalogView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
