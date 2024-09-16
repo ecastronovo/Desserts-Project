@@ -11,7 +11,7 @@
 		957A2F022C98D9D700D84F9A /* CatalogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F012C98D9D700D84F9A /* CatalogView.swift */; };
 		957A2F042C98D9D900D84F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957A2F032C98D9D900D84F9A /* Assets.xcassets */; };
 		957A2F072C98D9D900D84F9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 957A2F062C98D9D900D84F9A /* Preview Assets.xcassets */; };
-		957A2F112C98DBC000D84F9A /* CatalogNetworkManagerInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F102C98DBC000D84F9A /* CatalogNetworkManagerInterface.swift */; };
+		957A2F112C98DBC000D84F9A /* CatalogNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 957A2F102C98DBC000D84F9A /* CatalogNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +20,7 @@
 		957A2F012C98D9D700D84F9A /* CatalogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogView.swift; sourceTree = "<group>"; };
 		957A2F032C98D9D900D84F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		957A2F062C98D9D900D84F9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		957A2F102C98DBC000D84F9A /* CatalogNetworkManagerInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogNetworkManagerInterface.swift; sourceTree = "<group>"; };
+		957A2F102C98DBC000D84F9A /* CatalogNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatalogNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +89,7 @@
 		957A2F0F2C98DBA900D84F9A /* NetworkManagers */ = {
 			isa = PBXGroup;
 			children = (
-				957A2F102C98DBC000D84F9A /* CatalogNetworkManagerInterface.swift */,
+				957A2F102C98DBC000D84F9A /* CatalogNetworkManager.swift */,
 			);
 			path = NetworkManagers;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				957A2F112C98DBC000D84F9A /* CatalogNetworkManagerInterface.swift in Sources */,
+				957A2F112C98DBC000D84F9A /* CatalogNetworkManager.swift in Sources */,
 				957A2F022C98D9D700D84F9A /* CatalogView.swift in Sources */,
 				957A2F002C98D9D700D84F9A /* Desserts_ProjectApp.swift in Sources */,
 			);
