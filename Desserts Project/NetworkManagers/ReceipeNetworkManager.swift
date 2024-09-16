@@ -17,6 +17,7 @@ final class ReceipeNetworkManager: ReceipeNetworkManagerInterface {
                 return decodedMeal
             }
             catch {
+                // error handling can be improved
                 print(error)
                 return nil
             }
