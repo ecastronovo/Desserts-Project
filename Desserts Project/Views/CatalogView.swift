@@ -21,4 +21,14 @@ struct CatalogView: View {
     var body: some View {
         Text("")
     }
+
+    struct Properties {
+        let meals: [Meal]
+    }
+
+    struct Meal {
+        let mealName: String
+        let mealImageString: String
+        let mealId: String
+    }
 }
