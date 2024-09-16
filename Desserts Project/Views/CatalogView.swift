@@ -16,10 +16,17 @@ class CatalogViewModel: ObservableObject {
 }
 
 struct CatalogView: View {
-    @StateObject var catalog: CatalogViewModel = CatalogViewModel()
+    @StateObject var catalogViewModel: CatalogViewModel = CatalogViewModel()
 
     var body: some View {
-        Text("")
+        NavigationView {
+            if catalogViewModel.isLoading {
+                ProgressView()
+            }
+            else {
+                
+            }
+        }
     }
 
     struct Properties {
